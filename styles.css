@@ -32,6 +32,11 @@ body {
     /* Text will wrap around the floated image */
 }
 
+/* Paragraph spacing for text content */
+.text-content p {
+    margin-bottom: 20px;
+}
+
 .name {
     font-size: 3.5rem;
     font-weight: 300;
@@ -253,7 +258,7 @@ blockquote p {
     color: #333;
     font-size: 1.3rem;
     font-weight: 400;
-    margin: 10px 0 15px 0;
+    margin: 10px 0 0 0;
 }
 
 .research-section p {
@@ -410,7 +415,7 @@ blockquote p {
     line-height: 1.4;
 }
 
-/* Favorites Page Lists */
+/* Recommendations Page Lists */
 .text-content ul {
     margin: 20px 0;
     padding-left: 0;
