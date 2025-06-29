@@ -210,6 +210,7 @@ blockquote p {
     
     .name {
         font-size: 2.5rem;
+        text-align: center;
     }
     
     .text-content {
@@ -249,7 +250,6 @@ blockquote p {
 
 /* Research Section */
 .research-section {
-    padding-top: 10px;
     margin-bottom: 70px;
     text-align: left;
 }
@@ -444,9 +444,13 @@ blockquote p {
         padding-top: 20px;
     }
     
+    .projects-section h2 {
+        margin-bottom: 5px;
+    }
+    
     .research-section {
         margin-top: 30px;
-        padding-top: 20px;
+        padding-top: 5px;
     }
     
     .article-item {
@@ -466,6 +470,7 @@ blockquote p {
     
     .name {
         font-size: 2rem;
+        text-align: center;
     }
     
     .profile-image {
