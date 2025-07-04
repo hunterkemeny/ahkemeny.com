@@ -1,0 +1,298 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(./BebasNeue/BebasNeue-Bold.ttf) format("truetype");
+}
+
+/*TODO: responsive development */
+
+html {
+  font-size: 20px;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  background-color: rgb(40, 40, 40);
+  min-height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#logo {
+  width: 7.8%;
+  height: 38px; /* ERROR: percent not working */
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 40px;
+  max-height: 50px;
+  padding: 20px;
+}
+
+.intro {
+  width: 100%;
+  background-image: url(./bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mainphone {
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+#iphone {
+  width: 400px;
+  height: 650px;
+}
+
+.sloganscontainer {
+  display: inline-flex;
+}
+
+.slogans {
+  font-family: "Heebo", sans-serif;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.slogans h1 {
+  font-size: 2.7rem;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.slogans h2 {
+  font-family: "Arimo", sans-serif;
+  font-size: 1.5rem;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+#waitlist {
+  color: white;
+  display: inline-flex;
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: "Arimo", sans-serif;
+  padding: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons img {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  padding-top: 2%;
+}
+
+.brief-exp {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Arimo", sans-serif;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.brief-exp p {
+  padding-top: 2%;
+  padding-bottom: 3%;
+  font-size: 1.5rem;
+  color: black;
+  width: 12%;
+  min-width: 350px;
+}
+
+#notif {
+  position: relative;
+  left: 10px;
+}
+
+b {
+  font-weight: 900;
+  color: rgb(107, 31, 236);
+  font-size: 1.7rem;
+}
+
+.footer {
+  width: 100%;
+  font-size: 1rem;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  font-family: "Arimo", sans-serif;
+  padding-bottom: 1%;
+}
+
+.logo-div {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-logo {
+  width: 8%;
+  height: 40px;
+  min-width: 200px;
+  min-height: 40px;
+  padding-top: 2%;
+}
+
+.information {
+  justify-content: center;
+  display: flex;
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 1%;
+  padding-right: 1%;
+  flex-wrap: wrap;
+}
+
+.footer .title {
+  color: white;
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+
+.footer li {
+  color: rgb(150, 150, 150);
+  padding: 5px;
+}
+
+.footer a {
+  color: rgb(150, 150, 150);
+}
+
+.copy {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.copy p {
+  color: rgb(121, 121, 121);
+  padding-left: 0.7%;
+  padding-right: 0.7%;
+  padding-bottom: 2%;
+  font-size: 0.6rem;
+  flex-wrap: wrap;
+}
