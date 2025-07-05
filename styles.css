@@ -715,6 +715,24 @@ blockquote {
     margin-top: 20px;
 }
 
+.harvard-logo-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 40px;
+    transform: translateY(-60%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.harvard-logo {
+    height: 75px;
+    width: auto;
+    margin-right: -35px;
+    margin-top: 45px;
+}
+
 .mit-logo-container {
     position: absolute;
     top: 50%;
