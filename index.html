@@ -83,16 +83,48 @@
                     <div class="timeline-item">
                         <span class="timeline-date">2022—2024</span>
                         <div class="timeline-content">
-                            <h3>IBM Quantum Compilers and Benchmarks</h3>
-                            <p><em>MIT-IBM Watson AI Laboratory | Full-Time Research Engineer, Manager: Dr. Kevin Krsulich | September 2023 - September 2024</em></p>
-                            <p>Built a novel benchmarking tool for quantum compilers. As a Qiskit Developer, I also fix bugs, add features, and manage Qiskit releases. As an intern in summer 2022, I created a software package, spinlocker, that serves as an extension for Qiskit experiments. This package contains Nuclear Magnetic Resonance-inspired pulse gate experiments (T₁ρ) that I programmed for benchmarking the coherence times of single and entangled qubits on IBM superconducting quantum hardware (Python, Qiskit, IBMQ).</p>
-                            <img src="spin_locking_animation.gif" class="particle-tracking-gif" alt="Spin locking animation" />
-                            <img src="superconducting_quantum_topology.png" class="particle-tracking-gif" alt="Superconducting quantum topology" />
+                            <h3 class="title-with-logos">
+                                IBM Quantum Compilers and Benchmarks
+                                <div class="ibm-logo-container">
+                                    <img src="IBM_Quantum.png" class="ibm-logo" alt="IBM Quantum Logo" />
+                                    <img src="MITIBM_Watson.png" class="mitibm-logo" alt="MIT-IBM Watson AI Lab Logo" />
+                                </div>
+                            </h3>
+                            <p><em>Full-Time Research Engineer | Manager: Dr. Kevin Krsulich</em></p>
+                            <p>A significant portion of the excellent research in quantum computing takes place in industrial labs. In summer 2022, I was lucky to be accepted to the Quantum Undergraduate Research at IBM and Princeton program where I had the opportunity to work on benchmarking IBM's superconducting quantum computers in Yorktown Heights. </p>
+                            <p>I investigated experiments traditionally performed in the Nuclear Magnetic Resonance (NMR) setting—like spin-locking T₁ρ, Hahn echo, T₂*, etc—and applied them to test the quantum coherence of superconducting qubits. </p>
+                            <img src="spin_locking_animation.gif" class="spin-locking-gif" alt="Spin locking animation" />
+                            <blockquote><em></em>Spin-locking pulse sequence for coherence preservation in quantum systems. Left panel: With spin-locking, the quantum state remains largely preserved, indicating maintained quantum coherence. Right panel: Without spin-locking, free evolution leads to rapid dephasing and decoherence, evidenced by the shrinking arrow length. Bottom panel: Pulse sequence timing showing the three-pulse protocol with time progression indicator. The comparison clearly illustrates how spin-locking techniques can significantly extend quantum coherence lifetimes by suppressing environmental decoherence effects, making this a crucial tool for quantum information processing and NMR spectroscopy applications.</em></blockquote>
+                            <p>The benchmarks I created are used as an extension of Qiskit Experiments to test the coherence times of qubits across topologies of superconducting quantum circuits like the one shown below.</p>
+                            <div class="image-pair">
+                                <img src="superconducting_quantum_topology.png" class="superconducting-quantum-topology" alt="Superconducting quantum topology" />
+                                <img src="qc.jpg" class="particle-tracking-gif" alt="Quantum computer" />
+                                
+                            </div>
+                            <blockquote><em>On the left: IBM Q System One, a superconducting quantum computer. On the Right: The topological graph of IBM Quebec, a 127 qubit circuit with benchmarked error rates.</em></blockquote>
+                            <p>I also had some fun with other projects at Yorktown...</p>
+                            <div class="video-pair">
+                                <video id="spot-video" class="spot-video" autoplay muted loop playsinline>
+                                    <source src="spot_fixed.mov" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video id="spot-video-2" class="spot-video" autoplay muted loop playsinline>
+                                    <source src="spot2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p>I was initially expecting to graduate from Duke in 2024 but ended up receiving a return offer from IBM, motivating me to accelerate my degree by one year. As a research engineer working at the MIT-IBM Watson AI Lab, I worked yet again on benchmarks. This time, I built a benchmarking tool to compare the memory efficiency, circuit complexity, and timing between any quantum compilers.</p>
+                            <video class="benchmarking-video" autoplay muted loop playsinline>
+                                <source src="benchmarking_sped.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <blockquote><em>A comparison between Qiskit and Pytket compilers for select quantum circuits. RedQueen allows users to add their own quantum compilers to run any comparison of their choosing. RedQueen was superseded by BechPress after I left IBM.</em></blockquote>
+                            <p>When GPT-4 was released, I immediately realized that the theoretical and computational methods I'd worked years to hone will soon become obsolete. I decided to leave IBM and return to grad school as a first-time experimental physicist in order to gain skills in building physical hardware and apparatuses.</p>
                         </div>
                     </div>
 
                     <div class="timeline-item">
-                        <span class="timeline-date">2023</span>
+                        <span class="timeline-date">2023—2024</span>
                         <div class="timeline-content">
                             <h3 class="title-with-logos">
                                 Entangled Quantum Sensor Networks for Navigation Without GPS
@@ -191,6 +223,66 @@
         </div>
     </div>
     
-    
+    <script>
+        // Ensure videos play properly
+        document.addEventListener('DOMContentLoaded', function() {
+            const videos = ['spot-video', 'spot-video-2'];
+            const singleVideos = document.querySelectorAll('.benchmarking-video');
+            
+            // Handle paired videos
+            videos.forEach(videoId => {
+                const video = document.getElementById(videoId);
+                if (video) {
+                    // Try to play the video
+                    const playPromise = video.play();
+                    
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            // Video started playing successfully
+                            console.log(`${videoId} playing`);
+                        }).catch(error => {
+                            // Auto-play was prevented
+                            console.log(`${videoId} autoplay prevented:`, error);
+                            // Try playing again after a short delay
+                            setTimeout(() => {
+                                video.play().catch(e => console.log(`${videoId} retry failed:`, e));
+                            }, 100);
+                        });
+                    }
+                    
+                    // Also handle if video gets paused
+                    video.addEventListener('pause', function() {
+                        if (!video.ended) {
+                            video.play().catch(e => console.log(`${videoId} resume failed:`, e));
+                        }
+                    });
+                }
+            });
+            
+            // Handle single videos
+            singleVideos.forEach((video, index) => {
+                if (video) {
+                    const playPromise = video.play();
+                    
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            console.log(`Single video ${index} playing`);
+                        }).catch(error => {
+                            console.log(`Single video ${index} autoplay prevented:`, error);
+                            setTimeout(() => {
+                                video.play().catch(e => console.log(`Single video ${index} retry failed:`, e));
+                            }, 100);
+                        });
+                    }
+                    
+                    video.addEventListener('pause', function() {
+                        if (!video.ended) {
+                            video.play().catch(e => console.log(`Single video ${index} resume failed:`, e));
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html> 
