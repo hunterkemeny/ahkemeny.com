@@ -825,3 +825,46 @@ blockquote {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
+.inkwell-logo-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-60%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.inkwell-logo {
+    height: 70px;
+    width: auto;
+    margin-right: -10px;
+    margin-top: 30px;
+}
+
+.inkwell-logo-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #512b04ff;
+    font-size: 2.2rem;
+    display: inline-block;
+    margin-top: 60px;
+    margin-right: -20px;
+    vertical-align: middle;
+}
+
+.responsive-video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin: 25px 0 0 40px;
+}
+.responsive-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 95%;
+}
