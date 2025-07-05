@@ -42,14 +42,14 @@
                     <span class="first-name">Alek Hunter</span> Kemeny
                 </h1>
                 
-                <!-- <p class="subtitle">
-                    I am working to fully automate the scientific method with the goal of curing all disease, and ultimately aging.
-                </p> -->
+                <p class="subtitle">
+                    I am working to fully automate the scientific method. I look forward to a near-future where humans interface biological with artificial intelligence, build near-unlimited energy sources, and cure all disease—including aging.
+                </p>
                 
                 <div class="description">
                      <p>Welcome! I'm a PhD student at Harvard building quantum computers in the <a href="https://scholar.google.com/citations?user=OrPBhnIAAAAJ&hl=en" class="page-link" target="_blank" rel="noopener noreferrer">Ni</a> Lab. My research interests lie in using <a href="https://en.wikipedia.org/wiki/Neutral_atom_quantum_computer" class="page-link" target="_blank" rel="noopener noreferrer">arrays of neutral atoms</a> to investigate new chemistry and implement quantum error correcting codes. I am supported by the <a href="https://www.nsfgrfp.org/" class="page-link" target="_blank" rel="noopener noreferrer">NSF Graduate Research Fellowship Program</a>.</p>
                      <p>I'm also the CEO of <a href="https://www.inkwell.school/" class="page-link" target="_blank" rel="noopener noreferrer">Inkwell</a>, the first AI-native classroom management platform for teachers. Inkwell saves teachers ~10 hours/week of grading, tutors students on any topic 24/7, and eliminates AI cheating + plagarism.</p>
-                     <p>Before Harvard, I was an engineer at the <a href="https://mitibmwatsonailab.mit.edu/" class="page-link" target="_blank" rel="noopener noreferrer">MIT-IBM Watson AI Lab</a> on the Qiskit quantum compiler team. I received my B.A. in Physics from Duke University in 2023 where I was supervised by Professor <a href="https://scholar.google.com/citations?user=EFVX84sAAAAJ&hl=en" class="page-link" target="_blank" rel="noopener noreferrer">Kenneth Brown</a>.</p>
+                     <p>Before Harvard, I was an engineer at the <a href="https://mitibmwatsonailab.mit.edu/" class="page-link" target="_blank" rel="noopener noreferrer">MIT-IBM Watson AI Lab</a> on the Qiskit quantum compiler team. I received my B.A. in Physics from Duke University in 2023 where I was supervised by Professor <a href="https://ece.duke.edu/people/kenneth-brown/" class="page-link" target="_blank" rel="noopener noreferrer">Kenneth Brown</a>.</p>
                      <p>You can reach me at <span class="email-typewriter">hkemeny@g.harvard.edu</span> and find my CV <a href="Alek_Hunter_Kemeny_CV.pdf" class="cv-link">here</a>.</p>
                      <!-- While you're here, check out my favorite book and essay <a href="favorites.html" class="page-link">recommendations</a>. -->
                 </div>
@@ -86,63 +86,104 @@
                             <h3>IBM Quantum Compilers and Benchmarks</h3>
                             <p><em>MIT-IBM Watson AI Laboratory | Full-Time Research Engineer, Manager: Dr. Kevin Krsulich | September 2023 - September 2024</em></p>
                             <p>Built a novel benchmarking tool for quantum compilers. As a Qiskit Developer, I also fix bugs, add features, and manage Qiskit releases. As an intern in summer 2022, I created a software package, spinlocker, that serves as an extension for Qiskit experiments. This package contains Nuclear Magnetic Resonance-inspired pulse gate experiments (T₁ρ) that I programmed for benchmarking the coherence times of single and entangled qubits on IBM superconducting quantum hardware (Python, Qiskit, IBMQ).</p>
+                            <img src="spin_locking_animation.gif" class="particle-tracking-gif" alt="Spin locking animation" />
+                            <img src="superconducting_quantum_topology.png" class="particle-tracking-gif" alt="Superconducting quantum topology" />
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <span class="timeline-date">2023</span>
                         <div class="timeline-content">
-                            <h3>Utilizing Entangled Quantum Sensor Networks for Navigation Without GPS</h3>
-                            <p><em>MIT RLE | Researcher, PI: Professor Dirk Englund | June 2023 - Present</em></p>
-                            <p>Developed a procedure to enable the navigation of vehicles in GPS-denied locations. I developed a general representation for dynamic, distributed magnetic fields and proved a Quantum Cramer-Rao bound for magnetic field estimation. I created an algorithm for optimal placement of entangled quantum sensor networks. I currently supervise an undergrad who is implementing an algorithm to use my optimal measurements for precisely determining the location of our vehicle anywhere on the planet using a map of Earth's magnetic field.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <span class="timeline-date">2021—2023</span>
-                        <div class="timeline-content">
-                            <h3>ML Pulse Optimization and Simulation of Trapped-Ion Quantum Computers</h3>
-                            <p><em>Duke & Sandia National Labs | Researcher, PI: Professor Kenneth Brown | June 2021 - August 2023</em></p>
-                            <p>Built the first AMFM pulse optimizer and trapped-ion simulator. I implemented a machine-learning pipeline to find robust AMFM pulse sequences for user-defined gates. The project tackled optimization with Sandia National Laboratories, where I was the first to integrate Sandia's trapped-ion hardware. I also implemented a novel ML method achieving state-of-the-art fidelity (99.92%) and robustness for the Molmer-Sorensen gate by solving the master equation at every step in optimization to incorporate a complete picture of system noise.</p>
+                            <h3 class="title-with-logos">
+                                Entangled Quantum Sensor Networks for Navigation Without GPS
+                                <div class="mit-logo-container">
+                                    <img src="mit_eecs.png" class="mit-logo" alt="MIT EECS Logo" />
+                                </div>
+                            </h3>
+                            <p><em>Visiting Student | PI: Professor Dirk Englund</em></p>
+                            <p>Quantum computers will ultimately revolutionize a vast array of fields, from drug discovery to cryptography and materials design. After spending several years in the field, I wanted to see what applications quantum technologies are enabling <em>today</em>. One area is quantum sensing, which has already proved useful for neuroimaging and gravitational wave detection in LIGO. Thus, I joined Professor Dirk Englund's lab collaborating with Honda Research Initiative on quantum sensors to enable vehicle navigation in GPS-denied areas.</p>
+                            <p>I derived information-theoretic bounds for networks of quantum magnetometers—advanced sensors that measure magnetic fields more accurately than classical sensors—defining fundamental performance limits. I then pulled on work from computational fluid dynamics to implement a machine learning algorithm for reconstructing continuous magnetic fields given a small set of sensor measurements. </p>
+                            <img src="oqs_poster.png" class="particle-tracking-gif" alt="Quantum sensor networks for navigation" />
+                            <p>My simulated magnetic field reconstructions, along with theoretical work I contributed laying the foundations for vehicle geolocating, paves the way for future work on vehicle geolocation with solely on-board physical quantum sensors.</p>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <span class="timeline-date">2022</span>
                         <div class="timeline-content">
-                            <h3>A Superconducting Circuit for Generating and Studying Slow Light</h3>
-                            <p><em>Princeton University | QuNIP Intern, PI: Professor Andrew Houck | June 2022 - July 2022</em></p>
-                            <p>Analytically and computationally investigated superconducting circuits that produce slow light phenomena, called "non-Markovian" physics. I developed a rigorous mathematical argument constructing the minimum area circuit that can generate slow light behavior (Mathematica). I implemented a time-evolution calculation of the circuit coupled-oscillator model and started predictable double peak behaviors from simulations (Python, NumPy, Matplotlib). Experimentalists plan to build this circuit on superconducting quantum chips to provide a new quantum simulator for slow light.</p>
+                            <h3 class="title-with-logos">
+                                A Superconducting Circuit for Studying Slow Light
+                                <div class="princeton-logo-container">
+                                    <img src="princeton.png" class="princeton-logo" alt="Princeton University Logo" />
+                                </div>
+                            </h3>
+                            <p><em><a href="https://partnerships.princeton.edu/partnership-stories/ibm" class="page-link" target="_blank" rel="noopener noreferrer">QURIP</a> Intern | PI: Professor Andrew Houck</em></p>
+                            <p>After spending sophomore year researching trapped-ion quantum computers, I wanted to learn more about other promising platforms for quantum computing. Google and IBM have both heavily invested in superconducting qubits, a quantum technology that uses ultra-cold superconductors as giant atoms to support quantum dynamics. Intrigued by the strong focus from industry players on this technology, I joined Professor Andrew Houck's group at Princeton in summer 2022 where I worked on superconducting quantum memories.</p>
+                            <p>One promising avenue for quantum memories is "slow light", a phenomenon that occurs when the group velocity of photons is reduced to near zero. Circuits can be engineered to create slow light, but finding geometries small enough to fit on a superconducting chip can be challenging. To this end, I found a simple lattice geometry[1] supporting slow light and simulated circuit dynamics to determine if population revival—a key condition for quantum memory in our chosen regime—could be observed under realistic experimental disorders. </p>
+                            <img src="updated_quantum_simulation_hq.gif" class="slow-light-gif" alt="Quantum simulation of slow light" />
+                            <blockquote><em>Quantum revival dynamics in a photonic tight-binding lattice with qubit at stationary inflection point. (a) Upper panel: Real-time visualization of photon population dynamics. A single qubit (large node) is coupled to the central resonator. (b) Lower panel: Qubit population vs. time showing characteristic revival dynamics. The numbered points mark critical phases: (1) initial excitation (t = 0 μs), (2) population minimum as photons tunnel into the lattice (t ≈ 1.5 μs), (3) revival peak as photons return to the qubit (t ≈ 3.0 μs), and (4) final equilibrium state (t ≈ 7.2 μs). The slow-light dynamics enable non-Markovian quantum revival, demonstrating enhanced qubit-photon interaction time scales for quantum information processing applications.</em></blockquote>
+                            <p>This simulation successfully demonstrated revival behavior, a promising indicator for this device's potential for supporting quantum memory. For this work, I was selected by Duke as a finalist for the Barry M Goldwater Scholarship. You can read my writeup here.</p>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <span class="timeline-date">2021—2023</span>
                         <div class="timeline-content">
-                            <h3>Unsupervised Learning for Particle Tracking @ Large Hadron Collider</h3>
-                            <p><em>CERN | Researcher, PI: Professor Ashutosh Kotwal</em></p>
-                            <p>During my gap years, I self-studied physics with the goal of returning to college and pursuing a lifelong dream of exploring fundamental questions about our universe. This dream was realized when I joined Professor Ashutosh Kotwal's research group, which investigates potential dark matter signatures at the Large Hadron Collider (LHC).</p>
-                            <p>The LHC creates high-energy proton collisions, generating thousands of particle fragments detected by cylindrical arrays of pixel sensors. Identifying metastable particles, potential indicators of dark matter, within this immense data volume is computationally challenging—existing CPUs cannot process collision data quickly enough. To address this, I designed an FPGA-based AI algorithm that significantly accelerates real-time identification of these critical particle trajectories through graph-computing and unsupervised learning techniques.</p>
-                            <img src="multi_example_tracking.gif" class="particle-tracking-gif" alt="Particle tracking algorithm demonstration" />
-                            <p><em>Examples of the track-finding ability of the algorithm, demonstrated on simulated data. The C code used for FPGA synthesis is executed as software to emulate the algorithm's hardware results. The red points represent the hits associated with the high-momentum particle of interest, and the blue points represent hits from random noise. The red curve shows the trajectory identified by the algorithm. The embedded particle has a transverse momentum of 10 GeV/c and traverses an axial magnetic field of 2 T.</em></p>
-                            <p>Our solution achieved an unprecedented throughput of less than 25 nanoseconds per event, a thousand-fold improvement over existing LHC capabilities. This work culminated in my co-authoring a paper published in <em>Nature Scientific Reports</em>, marking a meaningful step towards enabling new physics discoveries at the LHC.</p>
+                            <h3 class="title-with-logos">
+                                Pulse Optimization for Trapped-Ion Quantum Computers
+                                <div class="duke-logo-container">
+                                    <img src="DQC.jpg" class="dqc-logo" alt="Duke Quantum Center Logo" />
+                                </div>
+                            </h3>
+                            <p><em>Undergraduate Researcher | PI: <a href="https://ece.duke.edu/people/kenneth-brown/" class="page-link" target="_blank" rel="noopener noreferrer">Professor Kenneth Brown</a></em></p>
+                            <p>After becoming obsessed with the science of disease and aging, I wanted to build new technologies that could accelerate research toward eventual cures. Quantum computing's promise to aid in drug discovery led me to join Professor Kenneth Brown's lab at <a href="https://quantum.duke.edu/" class="page-link" target="_blank" rel="noopener noreferrer">Duke Quantum Center</a> building trapped-ion quantum computers.</p>
+                            <p>A key objective for quantum computing experiments is the optimization of gate fidelity, which measures how often quantum gates produce desired outputs. However, methods to improve fidelity are typically specialized for a single type of gate and specific experimental apparatus. I developed a general tool that optimizes laser pulse amplitudes and frequencies to implement a wide class of high-fidelity gates for trapped-ion platforms.</p>
+                            <!-- <p>I first derived a mathematical expression relating any choice of laser pulse sequences with the resulting phase-space dynamics of trapped ions. I used this expression to define a cost function and build a gradient-based optimization engine in Pytorch that determines optimal pulse frequencies/amplitudes to drive desired quantum gate evolution. Importantly, my optimization protocol ensures that motional modes return to their ground states, avoiding decoherence from residual phonon excitations. I also included a sophisticated noise model that accounts for motional heating, laser phase noise, and dephasing effects; my optimizer discovered robust pulse sequences that maintain 99.9%+ fidelity in simulations of noisy five-ion quantum computers.</p> -->
+                            <img src="ms_gate_phase_space_evolution.gif" class="particle-tracking-gif" alt="Pulse optimization for Molmer-Sorensen gate" />
+                            <blockquote>Entangling gate dynamics for a 5-ion trapped ion quantum computer. (a) Phase space trajectories for six motional modes, showing the displacement evolution during the optimized pulse sequence. (b) Pulse frequency evolution over time showing the optimized frequency modulation pattern. (c) Gaussian-shaped Rabi frequency envelope demonstrating the amplitude modulation of the laser field. (d) XX-rotation angle evolution showing the target π/4 rotation required for the two-qubit entangling gate. The optimization successfully creates the desired entangling operation while minimizing residual motional excitation.</blockquote>
+                            <p>Using my tool, experimentalists can easily find optimal gates for their experimental configurations by inputting the trap parameters (like mode frequencies and Lamb-Dicke parameters) on the command line. This work led to a collaboration with <a href="https://www.sandia.gov/quantum/quantum-information-sciences/projects/qscout/" class="page-link" target="_blank" rel="noopener noreferrer">Sandia National Labs</a> where I interfaced my gate-fidelity optimizer with Sandia's quantum assembly language, enabling experiments with my gates on their trapped-ion platform.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-date">2021—2023</span>
+                        <div class="timeline-content">
+                            <h3 class="title-with-logos">
+                                Unsupervised Learning for Particle Tracking @ Large Hadron Collider
+                                <div class="cern-logo-container">
+                                    <img src="Duke University.svg" class="duke-logo" alt="Duke University Crest" />
+                                    <img src="Cern_logo.svg.png" class="cern-logo" alt="CERN Logo" />
+                                </div>
+                            </h3>
+                            <p><em>Undergraduate Researcher | PI: Professor <a href="https://en.wikipedia.org/wiki/Ashutosh_Kotwal" class="page-link" target="_blank" rel="noopener noreferrer">Ashutosh Kotwal</a></em></p>
+                            <p>For years, my main focus has been building new technologies with the goal of accelerating our species towards curing all disease and aging. But I also had a lifelong dream of exploring fundamental questions about our universe. I realized this dream when I returned to college after my gap years and joined Professor Ashutosh Kotwal's research group investigating potential dark matter signatures at the Large Hadron Collider (LHC).</p>
+                            <p>The LHC creates high-energy proton collisions, generating thousands of particle fragments detected by cylindrical arrays of pixel sensors. Identifying metastable particles, potential indicators of dark matter, within this immense data volume is computationally challenging—existing CPUs cannot process collision data quickly enough. To address this, I designed an FPGA-based algorithm that significantly accelerates real-time identification of these particle trajectories through graph-computing and unsupervised learning.</p>
+                            <img src="multi_example_tracking1.gif" class="particle-tracking-gif" alt="Particle tracking algorithm demonstration" />
+                            <blockquote><em>Examples of the track-finding ability of the algorithm, demonstrated on simulated data. Cocentric cylindrical sensors with radii 5cm-25cm detect particle fragments from collisions. The red points represent hits associated with the high-momentum particle of interest, and the blue points represent hits from random noise. We begin with a fully connected graph of all possible particle paths, then our algorithm systematically eliminates unlikely paths. The red curve indicates that the simulated metastable particle trajectory is successfully identified. The embedded metastable particle has a transverse momentum of 10 GeV/c and traverses an axial magnetic field of 2 T.</em></blockquote>
+                            <p>Our solution achieved state-of-the-art throughput of less than 250 nanoseconds per collision, a 100x improvement over existing LHC capabilities. This work culminated in my co-authoring a paper published in <a href="https://www.nature.com/articles/s41598-024-60319-9" class="page-link" target="_blank" rel="noopener noreferrer"><em>Nature Scientific Reports</em></a>, marking a meaningful step towards enabling new physics discoveries at the LHC. You can also read the <em>Science Daily article</em> about our work <a href="https://www.sciencedaily.com/releases/2024/07/240729173405.htm" class="page-link" target="_blank" rel="noopener noreferrer">here</a>.</p>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <span class="timeline-date">2019—2021</span>
                         <div class="timeline-content">
-                            <h3 class="research-section">KronaCash and OneHealth</h3>
+                            <h3 class="research-section title-with-logos">
+                                KronaCash and OneHealth
+                                <div class="kronohealth-logos">
+                                    <img src="kronacash-website/crown.jpg" class="kronohealth-logo" alt="KronaCash Logo" />
+                                    <img src="OneHealth/OneHealthLogo.png" class="kronohealth-logo" alt="OneHealth Logo" />
+                                </div>
+                            </h3>
                             <p class="research-section"><em>Phoenix, AZ | Gap Years</em></p>
-                            <p class="research-section">After my freshman year of college, I took two gap years to self-study computer science, math, and physics. In the process, I had a few startup ideas and co-founded a company with my friends from high school. The first was called <a href="kronacash-website/index.html" class="page-link">KronaCash</a>, an app to save you as much money as possible. We taught ourselves web and mobile development from scratch and started building a pipeline to find all applicable coupons and rewards whenever the user swiped their credit card. It was like Honey but for in-person retail.</p>
+                            <p class="research-section">After my freshman year of college, I took a gap year and co-founded a company with my friends from high school called <a href="kronacash-website/index.html" class="page-link">KronaCash</a>, an app to save you as much money as possible. We taught ourselves web and mobile development from scratch and started building a pipeline to find all applicable coupons and rewards whenever the user swiped their credit card. It was like Honey but for in-person retail.</p>
                             <img src="KronaCash.png" class="kronacash-image" alt="KronaCash App Screenshot" />
-                            <p class="research-section">When the pandemic hit, we realized it was impossible to collect the data we needed from local brick and mortar to aggregate coupons and rewards. Simultaneously, I read Lifespan by David Sinclair and became obsessed with health and longevity, so we pivoted to building an all-in-one personalized health app suggesting workouts, diet, mindfulness, etc. This was <a href="https://github.com/hunterkemeny/OneHealth" class="page-link" target="_blank" rel="noopener noreferrer">OneHealth</a>.</p>
+                            <p class="research-section">When the pandemic hit, we realized it was impossible to collect the data we needed from local brick and mortar to aggregate coupons and rewards. Simultaneously, I read <em>Lifespan</em> by David Sinclair and became obsessed with health and longevity, so we pivoted to building an all-in-one personalized health app suggesting workouts, diet, mindfulness, etc. This was <a href="https://github.com/hunterkemeny/OneHealth" class="page-link" target="_blank" rel="noopener noreferrer">OneHealth</a>.</p>
                             <div class="kronacash-gallery">
                                 <img src="OneHealth/homepage.JPG" class="kronacash-gallery-image" alt="OneHealth Homepage" />
                                 <img src="OneHealth/articles.JPG" class="kronacash-gallery-image" alt="OneHealth Articles" />
                                 <img src="OneHealth/metrics.JPG" class="kronacash-gallery-image" alt="OneHealth Metrics" />
                             </div>
-                            <p class="research-section">We were on the app store for a while, and although I love startups and programming with my friends, I ultimately decided to focus on developing deep scientific technical skills so I could work on building next-generation technologies like AI and quantum computers. </p>
+                            <p class="research-section">We were on the app store for a while, and although I love startups and programming with my friends, I ultimately decided to focus on developing deep scientific technical skills so I could work on building next-generation technologies like AI and quantum computers. I felt that college courses weren't fast-paced enough, so I took another gap year to self-study nearly the entire CS, math, and physics majors from MIT OpenCourseWare.</p>
                         </div>
                     </div>
                 </div>
